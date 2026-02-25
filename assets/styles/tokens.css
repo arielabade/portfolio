@@ -1,0 +1,14 @@
+:root {
+  --pool-green: #2ed3b7;
+  --deep-blue: #0f2a44;
+  --cool-gray: #e6eef3;
+  --ice-white: #fafcfd;
+  --ink: #0a1d2f;
+  --muted: #456179;
+  --line: #c7d7e2;
+  --card: #ffffff;
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow: 0 20px 40px rgba(9, 31, 48, 0.09);
+  --container: 1120px;
+}

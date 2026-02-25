@@ -1,0 +1,200 @@
+.button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.72rem 1.1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  background: linear-gradient(120deg, var(--pool-green), #4ad4f4);
+  color: #06243b;
+  box-shadow: 0 12px 24px rgba(46, 211, 183, 0.25);
+}
+
+.button-secondary {
+  background: var(--card);
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.chip-row,
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.chip,
+.tag {
+  border-radius: 999px;
+  background: #e9f8f5;
+  border: 1px solid #b8e7de;
+  color: #145e57;
+  font-size: 0.78rem;
+  padding: 0.24rem 0.6rem;
+  font-weight: 700;
+}
+
+.metric-grid,
+.card-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.metric-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.metric {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.metric strong {
+  display: block;
+  color: var(--deep-blue);
+  font-family: "Sora", "Manrope", sans-serif;
+  font-size: 1.05rem;
+}
+
+.metric span {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.tabs {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.tab {
+  border-radius: 999px;
+  border: 1px solid #bdd0dd;
+  background: #f2f7fa;
+  color: var(--ink);
+  padding: 0.55rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tab.is-active {
+  background: var(--deep-blue);
+  border-color: var(--deep-blue);
+  color: var(--ice-white);
+}
+
+.panel {
+  margin-top: 1.4rem;
+}
+
+.card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card,
+.info-card,
+.contact-panel {
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  padding: 1.2rem;
+}
+
+.project-card h3,
+.info-card h3 {
+  margin: 0;
+  font-family: "Sora", "Manrope", sans-serif;
+  font-size: 1.1rem;
+}
+
+.project-description,
+.info-card p {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.status,
+.meta,
+.kicker {
+  color: #2a516f;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.project-footer {
+  margin-top: 0.8rem;
+}
+
+.project-link {
+  color: var(--deep-blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-link.disabled {
+  color: var(--muted);
+}
+
+.contact-panel {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: var(--deep-blue);
+  font-weight: 700;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1000px) {
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

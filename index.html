@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ariel Abade | Portfólio Profissional</title>
+    <meta
+      name="description"
+      content="Portfólio profissional de Ariel Abade: projetos em dados, IA e analytics, reconhecimentos e trajetória profissional."
+    />
+
+    <meta property="og:title" content="Ariel Abade | Portfólio Profissional" />
+    <meta
+      property="og:description"
+      content="Currículo online com projetos reais, competências técnicas e evolução de carreira em dados e IA."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/styles/tokens.css" />
+    <link rel="stylesheet" href="assets/styles/layout.css" />
+    <link rel="stylesheet" href="assets/styles/components.css" />
+    <link rel="stylesheet" href="assets/styles/sections.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para conteúdo</a>
+
+    <header class="site-header">
+      <div class="container header-wrap">
+        <a class="brand" href="#inicio">
+          <span class="brand-badge">AA</span>
+          <span>ARIEL ABADE</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="#inicio">Início</a>
+          <a href="#painel">Painel profissional</a>
+          <a href="#stack">Stack</a>
+          <a href="#contato">Contato</a>
+          <a class="button button-primary" href="https://github.com/arielabade" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </nav>
+
+        <button id="menu-button" class="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu">
+          Menu
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="mobile-nav" hidden>
+        <div class="container">
+          <a href="#inicio">Início</a>
+          <a href="#painel">Painel profissional</a>
+          <a href="#stack">Stack</a>
+          <a href="#contato">Contato</a>
+          <a href="https://github.com/arielabade" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section id="inicio" class="hero">
+        <div class="container hero-grid">
+          <div data-reveal>
+            <p class="eyebrow">Currículo online • Dados e IA</p>
+            <h1 id="profile-name"></h1>
+            <p class="section-copy" id="profile-role"></p>
+            <p id="profile-headline"></p>
+
+            <div class="cta-row">
+              <a class="button button-primary" href="#painel">Ver projetos e reconhecimentos</a>
+              <a class="button button-secondary" href="#contato">Falar comigo</a>
+            </div>
+
+            <div id="highlight-list" class="metric-grid section" style="padding-bottom: 0;"></div>
+          </div>
+
+          <aside class="hero-card" data-reveal>
+            <h2>Resumo profissional</h2>
+            <p id="profile-summary"></p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="painel" class="section">
+        <div class="container">
+          <p class="eyebrow" data-reveal>Painel profissional</p>
+          <h2 class="section-title" data-reveal>Projetos, reconhecimentos e trajetória em um só lugar.</h2>
+          <p class="section-copy" data-reveal>
+            Estrutura em abas para facilitar leitura de recrutadores, lideranças técnicas e clientes.
+          </p>
+
+          <div class="tabs" role="tablist" aria-label="Abas de conteúdo" data-reveal>
+            <button class="tab" role="tab" data-tab-target="projetos" aria-selected="false">Projetos</button>
+            <button class="tab" role="tab" data-tab-target="reconhecimento" aria-selected="false">Reconhecimento</button>
+            <button class="tab" role="tab" data-tab-target="trajetoria" aria-selected="false">O que já fiz</button>
+          </div>
+
+          <section class="panel" data-tab-panel="projetos">
+            <div id="projects-grid" class="card-grid"></div>
+          </section>
+
+          <section class="panel" data-tab-panel="reconhecimento" hidden>
+            <div id="recognition-grid" class="card-grid"></div>
+          </section>
+
+          <section class="panel" data-tab-panel="trajetoria" hidden>
+            <div id="timeline-grid" class="card-grid"></div>
+          </section>
+        </div>
+      </section>
+
+      <section id="stack" class="section">
+        <div class="container split">
+          <article class="project-card" data-reveal>
+            <p class="eyebrow">Stack principal</p>
+            <h2 class="section-title">Tecnologias e ferramentas</h2>
+            <p class="section-copy">
+              Ferramentas que utilizo para construir soluções sustentáveis com foco em dados confiáveis e aplicações práticas.
+            </p>
+            <div id="tech-stack" class="chip-row"></div>
+          </article>
+
+          <article class="contact-panel" data-reveal>
+            <p class="eyebrow">Disponível para</p>
+            <h3>Freelas, consultoria e vaga full-time</h3>
+            <p>Posso atuar em projetos de analytics, engenharia de dados e protótipos com IA aplicada.</p>
+            <a class="contact-link" id="contact-github" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="contact-link" id="contact-linkedin" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contato" class="section">
+        <div class="container">
+          <article class="contact-panel" data-reveal>
+            <p class="eyebrow">Contato</p>
+            <h2 class="section-title">Vamos conversar sobre seu próximo projeto.</h2>
+            <p class="section-copy">
+              Se você quer acelerar decisão com dados, estruturar dashboards melhores ou aplicar IA de forma prática, me chama.
+            </p>
+            <div class="chip-row">
+              <a class="button button-primary" id="contact-whatsapp" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a class="button button-secondary" id="contact-email" href="mailto:"></a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <span>Portfólio profissional de Ariel Abade</span>
+        <span>© 2026 • Dados, IA e Software com foco em impacto</span>
+      </div>
+    </footer>
+
+    <script type="module" src="assets/scripts/app.js"></script>
+  </body>
+</html>
