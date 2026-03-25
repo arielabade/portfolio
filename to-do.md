@@ -1,0 +1,2 @@
+- [ ] colocar a formatação correta
+- [ ] ajeitar copies dos projetos
